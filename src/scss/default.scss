@@ -8,7 +8,7 @@ $colorBPost: #e8e8e8;
 $colorIcon: #8c8c8c;
 
 body {
-    font-family: sans-serif;
+    font-family: "SFProDisplay-Regular", sans-serif;
     background: $bgsite;
 }
 
@@ -17,4 +17,50 @@ body {
     height: 100%;
     width: 100%;
     margin: 0 auto;
+}
+
+.icon {
+    fill: $colorIcon;
+    &-like, &-comment {
+        margin-right: 6.5px;
+    }
+}
+
+.promo {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 260px;
+    border: 1px solid $colorBPost;
+    margin: 20px 0;
+    background: url('../img/promo.jpg') no-repeat center / cover;
+
+    &:before {
+        content:"Реклама";
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0 26px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 20px;
+        background: #c4c4c4
+    }
+}
+
+@font-face {
+    font-family: "SFProDisplay-Regular";
+    src: local("SFProDisplay-Regular"), 
+        url("../fonts/SFProDisplay-Regular.woff") format("woff"),
+        url("../fonts/SFProDisplay-Regular.woff2") format("woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SFProDisplay-Semibold";
+    src: local("SFProDisplay-Semibold"), 
+        url("../fonts/SFProDisplay-Semibold.woff") format("woff"),
+        url("../fonts/SFProDisplay-Semibold.woff2") format("woff2");
+    font-weight: bold;
 }
