@@ -49,6 +49,28 @@ body {
     }
 }
 
+.burger-menu {
+    display: none;
+}
+
+@media (max-width: 990px) {
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        margin-left: 12px;
+
+        span {
+            height: 2px;
+            width: 100%;
+            background: $gray;
+        }
+    }
+}
+
 @font-face {
     font-family: "SFProDisplay-Regular";
     src: local("SFProDisplay-Regular"), 

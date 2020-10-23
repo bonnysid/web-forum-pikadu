@@ -1,5 +1,6 @@
 .posts {
-    max-width: 800px;
+    width: 70%;
+    margin: 0 20px;
 }
 
 .content-wrapper {
@@ -102,7 +103,8 @@
 }
 
 .sidebar {
-    width: 31%;
+    width: 30%;
+    margin: 0 20px;
 }
 .user {
     display: flex;
@@ -225,6 +227,16 @@
             margin: 10px 0;
         }
         
+    }
+}
+
+@media (max-width: 990px) {
+    .sidebar {
+        display: none;
+    }
+
+    .posts {
+        width: 100%;
     }
 }
 
